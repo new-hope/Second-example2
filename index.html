@@ -5,6 +5,7 @@
 	<title>Front-end News</title>
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="main.css" />
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   </head>
   <body>
 	<header class="hero">
@@ -15,6 +16,17 @@
 	
 	<main class="content">
 		<div class="container">
+			<header class="subheader">
+				<h1>Latest News</h1>
+				<p>The latest links in the front-end community. <a href="#">Add a link now!</a></p>
+				<form class="form">
+					<label class="form-label" for="form-link-input">
+						Add a story:
+					</label>
+					<input class="form-input" type="text" id="form-link-input" />
+				</form>
+			</header>
+		
 			<ol class="news">
 				<li class="news-item">
 					<a class="news-link" href="#">Frontend Design</a>
@@ -23,11 +35,11 @@
 							<em>Posted by:</em>
 							<a href="#">Dan Denney</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">2 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 					
@@ -39,11 +51,11 @@
 							<em>Posted by:</em>
 							<a href="#">Jon Friscics</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">5 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -54,11 +66,11 @@
 							<em>Posted by:</em>
 							<a href="#">John D.Jameson</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">0 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -69,11 +81,11 @@
 							<em>Posted by:</em>
 							<a href="#">Jordan Wade</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">1 comment</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -84,11 +96,11 @@
 							<em>Posted by:</em>
 							<a href="#">Jean Kaluza</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">6 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -99,11 +111,11 @@
 							<em>Posted by:</em>
 							<a href="#">Sarah Imbert</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">4 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -114,11 +126,11 @@
 							<em>Posted by:</em>
 							<a href="#">Dan Denney</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">7 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -129,11 +141,11 @@
 							<em>Posted by:</em>
 							<a href="#">Justin Mezzell</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">1 comment</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -144,11 +156,11 @@
 							<em>Posted by:</em>
 							<a href="#">Dan Denney</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">10 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -159,11 +171,11 @@
 							<em>Posted by:</em>
 							<a href="#">Drew Barontini</a>
 						</li>
-						<li>
+						<li class="news-meta-item">
 							<a href="#">2 comments</a>
 						</li>
-						<li>
-							<a href="#">Like this story!</a>
+						<li class="news-meta-item">
+							<a class="js-like" href="#">Like this story!</a>
 						</li>
 					</ul>
 				</li>
@@ -171,6 +183,6 @@
 		</div>
 	</main>
 	
-	
+	<script src="app.js"></script>
   </body>
 </html>
